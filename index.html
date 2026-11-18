@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RUN FEST | Official Website</title>
+    <meta name="description" content="Official website of RUN FEST. Register for the 42K, 21K, 10K and 5K." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ============ NAVIGATION ============ -->
+    <header class="nav" id="nav">
+      <a href="#hero" class="nav__logo">RUN FEST</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+      <nav class="nav__links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#categories">Races</a>
+        <a href="#info">Info</a>
+        <a href="#route">Route</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#register" class="btn btn--red btn--sm">Register now</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ============ A. HERO ============ -->
+      <section class="hero bg-section" id="hero">
+        <div class="container hero__inner">
+          <p class="hero__meta">31 MAY 2027 &nbsp;|&nbsp; Malang, Indonesia</p>
+          <h1 class="hero__title">RUN FEST</h1>
+          <p class="hero__tagline">Run the streets. Own the finish.</p>
+          <div class="hero__actions">
+            <a href="#register" class="btn btn--red">REGISTER NOW</a>
+            <a href="#about" class="btn btn--outline">EXPLORE EVENT</a>
+          </div>
+          <!-- Countdown: set the date in script.js (RACE_DATE) -->
+          <div class="countdown" id="countdown" aria-live="off">
+            <div><b id="cd-days">00</b><span>Days</span></div>
+            <div><b id="cd-hours">00</b><span>Hours</span></div>
+            <div><b id="cd-mins">00</b><span>Minutes</span></div>
+            <div><b id="cd-secs">00</b><span>Seconds</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ B. ABOUT ============ -->
+      <section class="section" id="about">
+        <div class="container about">
+          <div class="about__text reveal">
+            <h2 class="h2">Twenty thousand runners. One city. One morning.</h2>
+            <p class="lead">RUN FEST closes the city's main avenues and turns them into a start-to-finish celebration of effort. Elite athletes and first-timers share the same line, the same course and the same crowd.</p>
+            <p>From the sunrise start to the finish arch, every kilometre is marked, supported and cheered. Aid stations every 5K, pacers for every target time, and medals for everyone who crosses.</p>
+            <ul class="stats">
+              <li><b>20K+</b> runners</li>
+              <li><b>4</b> distances</li>
+              <li><b>8</b> aid stations</li>
+            </ul>
+          </div>
+          <div class="about__photos reveal">
+            <img src="img/file_00000000527082119085f6d5ac62c604.png" alt="image" />
+            <img src="img/file_0000000068948207879d7c30f1fa355b.png" alt="image" />
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ C. RACE CATEGORIES ============ -->
+      <section class="section section--dark" id="categories">
+        <div class="container">
+          <h2 class="h2 reveal">Distance</h2>
+          <div class="cards">
+            <!-- Duplicate an <article> to add a category -->
+            <article class="card reveal">
+              <span class="card__km">20 KM</span>
+              <h3>Full Marathon</h3>
+              <p>The classic 20 km. Timed, chipped and paced, with a 6-hour cut-off.</p>
+              <a href="#register">Register</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ D. EVENT INFORMATION ============ -->
+      <section class="section" id="info">
+        <div class="container">
+          <h2 class="h2 reveal">Race day details</h2>
+          <dl class="info">
+            <div class="reveal">
+              <dt>Event date</dt>
+              <dd>Sunday, 31 MAY 2027</dd>
+            </div>
+            <div class="reveal">
+              <dt>Location</dt>
+              <dd>Malang, Jawa Timur</dd>
+            </div>
+            <div class="reveal">
+              <dt>Starting point</dt>
+              <dd>Balai Kota Malang, Main Avenue</dd>
+            </div>
+            <div class="reveal">
+              <dt>Race start time</dt>
+              <dd>5:30 AM (20K)</dd>
+            </div>
+            <div class="reveal">
+              <dt>Registration deadline</dt>
+              <dd>31 March 2027</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <!-- ============ E. ROUTE ============ -->
+      <section class="section section--grey" id="route">
+        <div class="container route">
+          <div class="route__map">
+            <iframe src="https://onthegomap.com/?route=01a1c0d6-160e-795f-9444-db2990fdc38d&context=share" width="100%" height="450" style="border: 0" allowfullscreen loading="lazy" title="Peta rute perjalanan"> </iframe>
+          </div>
+
+          <div class="route__info reveal">
+            <h2 class="h2">The route</h2>
+            <p>A point-to-point loop from Central Plaza along the river, across the old bridge, and back to the finish arch.</p>
+            <ol class="checkpoints">
+              <li><b>Start</b> Balai Kota</li>
+              <li><b>Checkpoint 1</b> Jalan Veteran</li>
+              <li><b>Checkpoint 2</b> Pesawat Suhat</li>
+              <li><b>Checkpoint 3</b> Lapangan Rampal</li>
+              <li><b>Finish</b> Balai Kota</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ F. GALLERY ============ -->
+      <section class="section" id="gallery">
+        <div class="container">
+          <h2 class="h2 reveal">From the road</h2>
+
+          <div class="gallery">
+            <figure class="tall">
+              <img src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=800&q=80" alt="Runner on the course" />
+              <figcaption>Runners</figcaption>
+            </figure>
+            <figure class="wide">
+              <img src="https://https://images.unsplash.com/photo-1777788613992-5f2655a97e72?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Runners at the starting line" />
+              <figcaption>Starting line</figcaption>
+            </figure>
+            <figure>
+              <img src="https://images.unsplash.com/photo-1571008887538-b36bb32f4571?auto=format&fit=crop&w=800&q=80" alt="Runner crossing the finish line" />
+              <figcaption>Finish line</figcaption>
+            </figure>
+            <figure>
+              <img src="https://images.unsplash.com/photo-1532444458054-01a7dd3e9fca?auto=format&fit=crop&w=800&q=80" alt="Spectators cheering" />
+              <figcaption>The crowd</figcaption>
+            </figure>
+            <figure class="wide">
+              <img src="https://images.unsplash.com/photo-1486218119243-13883505764c?auto=format&fit=crop&w=1200&q=80" alt="Group of runners on a city road" />
+              <figcaption>City streets</figcaption>
+            </figure>
+            <figure>
+              <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=800&q=80" alt="Athlete training" />
+              <figcaption>Training</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ G. REGISTRATION ============ -->
+      <section class="section register bg-section" id="register">
+        <div class="container register__inner reveal">
+          <h2 class="h2">Your start line is waiting</h2>
+          <p class="lead">Registration closes 31 March 2027, or when all places are taken. Entry includes a race bib with timing chip, finisher medal, event T-shirt and aid-station support.</p>
+          <a href="#" class="btn btn--red btn--lg">REGISTER NOW</a>
+          <p class="small">Early-bird pricing and group discounts available.</p>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ H. FOOTER ============ -->
+    <footer class="footer">
+      <div class="container footer__grid">
+        <div>
+          <a href="#hero" class="nav__logo">RUN FEST</a> <a href="https://www.instagram.com/arifsajaa_/">Arief</a> <a href="https://www.instagram.com/4nsssaaa_/">Andre</a> <a href="https://www.instagram.com/roobith_ghozi/">Robith</a>
+          <p>Official race website.</p>
+        </div>
+        <div>
+          <h4>Follow</h4>
+          <a href="https://www.instagram.com/arifsajaa_/">Instagram</a> <a href="https://www.facebook.com/profile.php?id=100035482387095">Facebook</a> <a href="#">X / Twitter</a> <a href="#">YouTube</a>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <a href="mailto:info@example.com">runfest2k27@gmail.com</a>
+          <a href="https://wa.me/6285608648040">+62 856 0864 8040</a>
+          <span>Race Office, Central Plaza</span>
+        </div>
+      </div>
+      <p class="footer__copy">&copy; <span id="year">2027</span> RUN FEST. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
